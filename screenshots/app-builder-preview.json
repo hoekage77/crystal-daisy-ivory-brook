@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Riftborn",
+      "hasCanvas": false,
+      "bodyTextLen": 48,
+      "bodyTextHash": "6cc7e9d6fb28890afe2a3be83395294755222016b74f928e585b7508739205dd",
+      "bodyTextPrefix": "Riftborn CHARACTER FORGE Forge Roster Gear Codex",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Riftborn",
+      "hasCanvas": false,
+      "bodyTextLen": 905,
+      "bodyTextHash": "3dda4fcf54139a2e7df06bc2fbce9cdbb6583d8d1c221911da6449585d30ea04",
+      "bodyTextPrefix": "Riftborn Forge Roster Gear Codex MIXAMO STICK · LEDGER LIVE Ashe",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
