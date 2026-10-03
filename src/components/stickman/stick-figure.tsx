@@ -96,7 +96,7 @@ function AuraField({ kind, color }: { kind: string; color: string }) {
 function HandWeapon({ mesh, style, off }: { mesh: string; style: ReturnType<typeof figureStyle>; off?: boolean }) {
   if (!mesh || mesh === "none") return null;
   return (
-    <group rotation={[Math.PI / 2, 0, 0]}>
+    <group rotation={[0.95, 0.2, 0.15]}>
       <Weapon mesh={mesh} style={style} off={off} />
     </group>
   );

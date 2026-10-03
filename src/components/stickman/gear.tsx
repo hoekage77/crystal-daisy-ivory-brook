@@ -400,13 +400,13 @@ export function Weapon({
 }) {
   if (mesh === "sword" || mesh === "dual") {
     return (
-      <group rotation={[0, 0, off ? 0.15 : -0.15]} position={[0, -0.02, 0.02]}>
-        <mesh position={[0, 0.22, 0]}>
-          <boxGeometry args={[0.025, 0.42, 0.01]} />
+      <group rotation={[0, 0, off ? 0.15 : -0.15]}>
+        <mesh position={[0, 0.16, 0]}>
+          <boxGeometry args={[0.022, 0.3, 0.01]} />
           <Mat spec={style.metal} />
         </mesh>
-        <mesh position={[0, 0.02, 0]}>
-          <boxGeometry args={[0.08, 0.02, 0.02]} />
+        <mesh position={[0, 0.01, 0]}>
+          <boxGeometry args={[0.07, 0.018, 0.018]} />
           <Mat spec={style.accent} />
         </mesh>
       </group>
@@ -415,12 +415,12 @@ export function Weapon({
   if (mesh === "greatsword") {
     return (
       <group>
-        <mesh position={[0, 0.38, 0]}>
-          <boxGeometry args={[0.045, 0.7, 0.014]} />
+        <mesh position={[0, 0.24, 0]}>
+          <boxGeometry args={[0.036, 0.46, 0.012]} />
           <Mat spec={style.metal} />
         </mesh>
-        <mesh position={[0, 0.04, 0]}>
-          <boxGeometry args={[0.12, 0.03, 0.03]} />
+        <mesh position={[0, 0.02, 0]}>
+          <boxGeometry args={[0.1, 0.022, 0.022]} />
           <Mat spec={style.accent} />
         </mesh>
       </group>
@@ -428,9 +428,9 @@ export function Weapon({
   }
   if (mesh === "daggers") {
     return (
-      <group rotation={[0, 0, off ? 0.4 : -0.4]}>
-        <mesh position={[0, 0.12, 0]}>
-          <boxGeometry args={[0.018, 0.22, 0.008]} />
+      <group rotation={[0, 0, off ? 0.35 : -0.35]}>
+        <mesh position={[0, 0.1, 0]}>
+          <boxGeometry args={[0.016, 0.18, 0.008]} />
           <Mat spec={style.metal} />
         </mesh>
       </group>
@@ -439,12 +439,12 @@ export function Weapon({
   if (mesh === "spear") {
     return (
       <group>
-        <mesh position={[0, 0.55, 0]}>
-          <cylinderGeometry args={[0.012, 0.012, 1.15, 8]} />
+        <mesh>
+          <cylinderGeometry args={[0.01, 0.01, 0.7, 8]} />
           <Mat spec={style.metal} />
         </mesh>
-        <mesh position={[0, 1.14, 0]}>
-          <coneGeometry args={[0.03, 0.14, 8]} />
+        <mesh position={[0, 0.38, 0]}>
+          <coneGeometry args={[0.022, 0.09, 8]} />
           <Mat spec={style.accent} />
         </mesh>
       </group>
@@ -452,8 +452,8 @@ export function Weapon({
   }
   if (mesh === "needle") {
     return (
-      <mesh position={[0, 0.42, 0]}>
-        <cylinderGeometry args={[0.008, 0.006, 0.85, 8]} />
+      <mesh>
+        <cylinderGeometry args={[0.007, 0.005, 0.62, 8]} />
         <Mat spec={style.metal} />
       </mesh>
     );
@@ -461,13 +461,27 @@ export function Weapon({
   if (mesh === "staff") {
     return (
       <group>
-        <mesh position={[0, 0.45, 0]}>
-          <cylinderGeometry args={[0.016, 0.016, 0.95, 8]} />
+        <mesh>
+          <cylinderGeometry args={[0.014, 0.014, 0.62, 8]} />
           <Mat spec={style.cloth} />
         </mesh>
-        <mesh position={[0, 0.95, 0]}>
-          <icosahedronGeometry args={[0.055, 0]} />
+        <mesh position={[0, 0.34, 0]}>
+          <icosahedronGeometry args={[0.045, 0]} />
           <Mat spec={style.aura} />
+        </mesh>
+      </group>
+    );
+  }
+  if (mesh === "scythe") {
+    return (
+      <group>
+        <mesh>
+          <cylinderGeometry args={[0.012, 0.012, 0.64, 8]} />
+          <Mat spec={style.metal} />
+        </mesh>
+        <mesh position={[0.1, 0.28, 0]} rotation={[0, 0, 1.05]}>
+          <boxGeometry args={[0.2, 0.045, 0.01]} />
+          <Mat spec={style.accent} />
         </mesh>
       </group>
     );
